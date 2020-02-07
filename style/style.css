@@ -1,0 +1,102 @@
+.body{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	height: 15vh;
+	width: 100%;
+	position: relative;
+}
+.mobileview{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: black;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: azure;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover{
+	color: orangered;
+}
+
+
+.sidenav .closebtn{
+	position: absolute;
+	top:20px;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	
+}
+
+@media screen and (max-height: 450px)
+{
+	.sidenav {padding-top: 15px;}
+	.sidenav a{font-size: 18px;}
+}
+
+.photo_board{
+	width: 100vh;
+	height: 100vw;
+	transform: rotate(-90deg) translateX(-100vh);
+	transform-origin: top left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	
+	
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+
+.image_jo{
+	width: 100vw;
+	height: 80vh;
+	flex-direction: row;
+	display: flex;
+	transform: rotate(90deg) translateY(-100vh);
+	transform-origin: top left;
+	
+}
+.message{
+	position: relative;
+	width: 100%;
+	margin:0;
+	top: 37em
+}
+.footer{
+	position: relative;
+	top: 40em;
+    font-weight: 500;
+	
+}
+.intro{
+	color: red;
+}
+
+
+
+
+
+

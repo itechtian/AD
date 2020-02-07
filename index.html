@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>AD-empire</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	
+	<div class="container-fluid">
+		<div class="header">
+			
+			<span style="font-size: 50px;cursor: pointer" onclick="openNav()">&#9776;</span>
+		
+			<div id="mysidenav" class="sidenav mobileview">
+				<a href="javascript:viod(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="">Home</a>
+				<a href="">Gallery</a>
+				<a href="">News</a>
+				<a href="">Contact Us</a>
+			</div>
+			<img class="img-responsive logo" src="image/logo.jpg" alt="logo">
+			</div>
+	</div> 
+	<div class="container-fluid" id="mainone">
+		<div class="photo_board">
+			<div class="image_jo">
+			<img src="image/image.jpg" class="img-responsiv photo1" alt="photo1">
+			<img src="image/image.jpg"  class="img-responsive photo2" alt="photo2">
+			<img src="image/image.jpg" class="img-responsive photo3" alt="photo3">
+			<img src="image/image.jpg" class="img-responsive photo4" alt="photo4">
+		</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+	<div class="jumbotron message text-center">
+		<h1>About  AD-EMPIRE lets explore together .</h1>
+	</div>
+	</div>
+	<div class="container-fluid">
+		<div class="thehidefunction">
+			<h1></h1>
+		</div>
+	</div>
+	<footer class="footer text-center">
+		<p>Devloped by one and only<span class="intro"> "clarkweb"</span> 2020@copyright</p>
+	</footer>
+	
+	
+	
+	
+	
+   <script>
+		function openNav() {
+			document.getElementById("mysidenav").style.width = "250px";
+			document.getElementById("mainone").style.marginLeft = "250px";
+			
+		}
+		
+		function closeNav() {
+			document.getElementById("mysidenav").style.width = "0";
+			document.getElementById("mainone").style.width = "100%";
+			document.getElementById("mainone").style.marginLeft = "0";			document.getElementById("mainone").style.backgroundColor = "white";
+		}
+	</script>
+	
+</body>
+</html>
