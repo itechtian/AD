@@ -34,23 +34,62 @@
 		</div>
 		</div>
 	</div>
-	<div class="container-fluid">
 	<div class="jumbotron message text-center">
-		<h1>About  AD-EMPIRE lets explore together .</h1>
+		<h1>About  AD-EMPIRE lets explore together.</h1>
 	</div>
+	<div class="hide">
+		<div class="thehidefunction text-center" id="box-hide">
+			<h1>AD empire</h1>
+		    <p>Work with us, Walk with Jesus</p>
+		    <a href="index.html">join us</a>
+		</div>
+	    <button type="button" class="btn" id="click">show</button>
 	</div>
-	<div class="container-fluid">
-		<div class="thehidefunction">
-			<h1></h1>
+	<div class="hide2">
+		<div class="thehidefunction text-center" id="box-hide2">
+			<h1>AD empire</h1>
+		    <p>Work with us, Walk with Jesus</p>
+		    <a href="index.html">join us</a>
+		</div>
+	    <button type="button" class="btn" id="click2">show</button>
+	</div>
+	
+	<div class="container-fluid" id="cover-all">
+		<div class="photo_board-two">
+			<div class="image_jo-two">
+			<img src="image/image.jpg" class="img-responsiv photo1" alt="photo1">
+			<img src="image/image.jpg"  class="img-responsive photo2" alt="photo2">
+			<img src="image/image.jpg" class="img-responsive photo3" alt="photo3">
+			<img src="image/image.jpg" class="img-responsive photo4" alt="photo4">
+		</div>
 		</div>
 	</div>
+	
 	<footer class="footer text-center">
 		<p>Devloped by one and only<span class="intro"> "clarkweb"</span> 2020@copyright</p>
 	</footer>
 	
 	
 	
+	<script src="jquery/jquery-3.4.1.js"></script>
+	<script>
+	$(document).ready(function(){
 	
+		$("#box-hide").hide();
+		
+		$('#click').on('click', function() {
+			$('#box-hide').toggle(500);
+		});
+		
+		$("#box-hide2").hide();
+		
+		$('#click2').on('click', function() {
+			$('#box-hide2').toggle(500);
+			$('#box-hide2').style.backgroundColor = "hotpink";
+		})
+	})
+	
+	</script>
 	
    <script>
 		function openNav() {
@@ -62,7 +101,8 @@
 		function closeNav() {
 			document.getElementById("mysidenav").style.width = "0";
 			document.getElementById("mainone").style.width = "100%";
-			document.getElementById("mainone").style.marginLeft = "0";			document.getElementById("mainone").style.backgroundColor = "white";
+			document.getElementById("mainone").style.marginLeft = "0";
+			document.getElementById("mainone").style.backgroundColor = "white";
 		}
 	</script>
 	
